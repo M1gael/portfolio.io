@@ -11,14 +11,14 @@ body {
 }
 
 header {
-    background-color: #4285f4;
-    color: #fff;
+    background-color: #ffffff;
+    color: #4285f4;
     text-align: center;
     padding: 40px 0;
 }
 
 nav {
-    /* Style your navigation here if needed */
+    
 }
 
 main {
@@ -58,4 +58,3 @@ footer {
     border-radius: 5px;
 }
 
-/* Add more styles as needed */
