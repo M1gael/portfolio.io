@@ -1,8 +1,70 @@
-h1 , h2{
+body  {
+    margin: 0;
+    padding: 5%;
+}
+
+header {
+    max-height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 5px solid #CCCCCC;
+}
+
+.prim_gray{
     color : #2B2B2B;
 }
 
-#secon_gray {
+.secon_gray , h3 , h4 , p {
     color: #666666;
 }
 
+.tetri_gray {
+    color: #CCCCCC;
+}
+
+
+#titlediv{
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    padding-right: 3%;
+}
+
+#titlediv h1 {
+    border-bottom: 2px solid;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+    max-width: 100%;
+    font-size: 55px;
+}
+
+#contactdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: fit-content;
+    gap: 10px;
+    text-align: right;
+}
+
+#summary {
+    text-align: center;
+}
+
+#summary h2 {
+    margin-bottom: 0;
+}
+
+#summary p {
+    margin-top: 0;
+}
+
+#education p, #experience p, #competencies p{
+    margin-left: 5%;
+}
+
+#contactdiv{
+    width: 65%;
+}
