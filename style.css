@@ -1,6 +1,12 @@
 body  {
     margin: 0;
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+main {
+    display: flex;
+
 }
 
 header {
@@ -9,14 +15,15 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     border-bottom: 5px solid #CCCCCC;
+    margin-bottom: 50px;
+}
+
+h1 , h2 , h3 , h4 , section , p {
+    color: #666666;
 }
 
 .prim_gray{
     color : #2B2B2B;
-}
-
-.secon_gray , h3 , h4 , p {
-    color: #666666;
 }
 
 .tetri_gray {
@@ -27,16 +34,18 @@ header {
 #titlediv{
     display: flex;
     flex-direction: column;
-    height: inherit;
-    padding-right: 3%;
+    justify-content: space-between;
+    max-width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    padding-right: 4%;
 }
 
 #titlediv h1 {
-    border-bottom: 2px solid;
-    padding: 0;
+    border-bottom: solid 3px;
     margin: 0;
     height: fit-content;
-    max-width: 100%;
+    width: ;
     font-size: 55px;
 }
 
@@ -44,27 +53,53 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: fit-content;
+    max-width: 100%;
+    height: fit-content;
+    margin-top: 30px;
     gap: 10px;
-    text-align: right;
+    text-align: center;
 }
 
 #summary {
+    width: 100%;
     text-align: center;
 }
 
 #summary h2 {
-    margin-bottom: 0;
+    max-width: 25%;
+    margin: auto;
+    border-bottom: solid 3px;
+    margin-bottom: 20px;
 }
 
 #summary p {
-    margin-top: 0;
+    margin-bottom: 30px;
 }
 
-#education p, #experience p, #competencies p{
+#edu-comp-div {
+    max-width: 50%;
+    padding-right: 2%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+    border-right: solid 3px;
+
+}
+
+#edu-comp-div p, #experience p{
     margin-left: 5%;
 }
 
-#contactdiv{
-    width: 65%;
+#edu-comp-div h2, #experience h2{
+    max-width: fit-content;
+    border-bottom: solid 3px;
+} 
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    max-width: 50%;
+    height: 100%;
 }
+  
