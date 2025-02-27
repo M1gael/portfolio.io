@@ -22,6 +22,11 @@ h1 , h2 , h3 , h4 , section , p {
     color: #666666;
 }
 
+ul {
+    margin: 0  0  30px  0;
+    padding: 0;
+}
+
 .prim_gray{
     color : #2B2B2B;
 }
@@ -29,7 +34,6 @@ h1 , h2 , h3 , h4 , section , p {
 .tetri_gray {
     color: #CCCCCC;
 }
-
 
 #titlediv{
     display: flex;
@@ -77,7 +81,7 @@ h1 , h2 , h3 , h4 , section , p {
 }
 
 #edu-comp-div {
-    max-width: 50%;
+    width: 50%;
     padding-right: 2%;
     margin-right: 3%;
     display: flex;
@@ -86,8 +90,9 @@ h1 , h2 , h3 , h4 , section , p {
 
 }
 
-#edu-comp-div p, #experience p{
+#edu-comp-div p, #experience p , ul , li{
     margin-left: 5%;
+    padding: 0;
 }
 
 #edu-comp-div h2, #experience h2{
@@ -99,7 +104,8 @@ h1 , h2 , h3 , h4 , section , p {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    max-width: 50%;
+    width: 50%;
+    margin-right: 5%;
     height: 100%;
 }
   
