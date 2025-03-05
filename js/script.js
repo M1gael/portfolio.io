@@ -9,8 +9,8 @@ function lightswitch() {
 
     var img = document.getElementById("lightswitchimg");
     if (body.classList.contains("darkmode-body")) {
-        img.src = "../img/epic.png";
+        img.src = "img/epic.png";
     } else {
-        img.src = "../img/boring.png";
+        img.src = "img/boring.png";
     }
 }
