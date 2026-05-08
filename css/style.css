@@ -119,13 +119,38 @@ header img {
     height: 100%;
 }
 
-/*Script Components*/
-.darkmode-body {
+/* script components*/
+/* dark mode — one class on body, cascade everywhere 
+ * if a body has a class of darkmode then apply*/
+body.darkmode {
     background-color: #343738;
     color: #e8e6e3;
 }
 
-.darkmode-elements {
-    color: #ffffff;
+body.darkmode h1,
+body.darkmode h2,
+body.darkmode h3,
+body.darkmode h4,
+body.darkmode p,
+body.darkmode li {
+    color: #e8e6e3;
 }
 
+/* if a body has darkmode class, look inside for a titlediv , look inside that for h1*/
+body.darkmode #titlediv h1 {
+    border-bottom-color: #e8e6e3;
+}
+
+body.darkmode #summary h2,
+body.darkmode #edu-comp-div h2,
+body.darkmode #experience h2 {
+    border-bottom-color: #e8e6e3;
+}
+
+body.darkmode #edu-comp-div {
+    border-right-color: #e8e6e3;
+}
+
+body.darkmode header {
+    border-bottom-color: rgba(232, 230, 227, 0.3);
+}
