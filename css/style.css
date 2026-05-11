@@ -1,4 +1,4 @@
-/*Startup*/
+                                        /*===startup===*/
 body  {
     margin: 0;
     padding-left: 5%;
@@ -68,12 +68,6 @@ header img {
     margin-top: 0px;
 }
 
-@media (max-width: 1080px) {
-    #contactdiv {
-        display: none;
-    }
-}
-
 #summary {
     width: 100%;
     text-align: center;
@@ -119,9 +113,11 @@ header img {
     height: 100%;
 }
 
-/* script components*/
-/* dark mode — one class on body, cascade everywhere 
- * if a body has a class of darkmode then apply*/
+
+                                        /* ===script components===*/
+/* dark mode 
+ * — one class on body, cascade everywhere 
+ * - if a body has a class of darkmode then apply*/
 body.darkmode {
     background-color: #343738;
     color: #e8e6e3;
@@ -154,3 +150,70 @@ body.darkmode #edu-comp-div {
 body.darkmode header {
     border-bottom-color: rgba(232, 230, 227, 0.3);
 }
+
+
+
+                                        /* ===media queries=== */
+/* ---mobile layout --- */
+@media (max-width: 768px) {
+    body {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    /* stack header vertically */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    #titlediv h1 {
+        font-size: 36px;
+    }
+
+    #titlediv h4 {
+        font-size: 14px;
+    }
+
+    /* Show contact info on mobile (override the desktop hide rule) */
+    #contactdiv {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    /* Widen the SUMMARY underline on mobile */
+    #summary h2 {
+        max-width: 60%;
+    }
+
+    /* Stack the two main columns vertically */
+    main {
+        flex-direction: column;
+    }
+
+    #edu-comp-div,
+    #experience {
+        width: 100%;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    /* replace the vertical divider with a horizontal one */
+    #edu-comp-div {
+        border-right: none;
+        border-bottom: solid 3px;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+
+    /* add the same border color in dark mode for the new horizontal divider */
+    body.darkmode #edu-comp-div {
+        border-bottom-color: #e8e6e3;
+    }
+}
+
+
