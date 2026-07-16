@@ -254,7 +254,7 @@ body.darkmode header {
         padding: 0 !important;
         margin: 0 !important;
         border: none !important;
-        page-break-inside: avoid;
+        display: block !important;
     }
 
     #edu-comp-div {
