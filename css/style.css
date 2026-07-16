@@ -214,4 +214,42 @@ body.darkmode header {
     }
 }
 
+/* ---print layout --- */
+@media print {
+    body, body.darkmode {
+        background-color: white !important;
+        color: black !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: none !important;
+    }
+    
+    body.darkmode h1, body.darkmode h2, body.darkmode h3, body.darkmode h4, body.darkmode p, body.darkmode li {
+        color: black !important;
+    }
+
+    #lightswitchimg {
+        display: none !important;
+    }
+
+    header {
+        border-bottom: 2px solid black !important;
+        margin-bottom: 20px !important;
+        padding-top: 0 !important;
+    }
+
+    #edu-comp-div, #experience {
+        page-break-inside: avoid;
+    }
+
+    #edu-comp-div {
+        border-right: 2px solid black !important;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
 
