@@ -22,7 +22,7 @@ header {
     margin-bottom: 50px;
 }
 
-h1 , h2 , h3 , h4 , section , p {
+h1 , h2 , h3 , h4 , section , p, li, #contactdiv {
     color: #666666;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -126,7 +126,8 @@ body.darkmode h2,
 body.darkmode h3,
 body.darkmode h4,
 body.darkmode p,
-body.darkmode li {
+body.darkmode li,
+body.darkmode #contactdiv {
     color: #e8e6e3;
 }
 
@@ -180,7 +181,7 @@ body.darkmode header {
     /* Show contact info on mobile (override the desktop hide rule) */
     #contactdiv {
         display: block;
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
 
     /* Widen the SUMMARY underline on mobile */
@@ -216,6 +217,10 @@ body.darkmode header {
 
 /* ---print layout --- */
 @media print {
+    @page {
+        margin: 1.5cm;
+    }
+
     body, body.darkmode {
         background-color: white !important;
         color: black !important;
@@ -226,6 +231,7 @@ body.darkmode header {
     
     body.darkmode h1, body.darkmode h2, body.darkmode h3, body.darkmode h4, body.darkmode p, body.darkmode li {
         color: black !important;
+        border-color: black !important;
     }
 
     #lightswitchimg {
@@ -236,14 +242,25 @@ body.darkmode header {
         border-bottom: 2px solid black !important;
         margin-bottom: 20px !important;
         padding-top: 0 !important;
+        flex-direction: row !important;
+    }
+
+    main {
+        display: block !important;
     }
 
     #edu-comp-div, #experience {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none !important;
         page-break-inside: avoid;
     }
 
     #edu-comp-div {
-        border-right: 2px solid black !important;
+        margin-bottom: 30px !important;
+        border-bottom: 2px solid black !important;
+        padding-bottom: 20px !important;
     }
 
     a {
