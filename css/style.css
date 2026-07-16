@@ -1,10 +1,10 @@
                                         /*===startup===*/
 body  {
-    margin: 0;
+    margin: 0 auto;
     padding-left: 5%;
     padding-right: 5%;
+    max-width: 1200px;
     transition: background-color 0.5s ease, color 0.5s ease;
-
 }
 
 main {
@@ -85,13 +85,11 @@ header img {
 }
 
 #edu-comp-div {
-    width: 50%;
-    padding-right: 2%;
-    margin-right: 3%;
+    flex: 1;
+    padding-right: 5%;
     display: flex;
     flex-direction: column;
     border-right: solid 3px;
-
 }
 
 #edu-comp-div p, #experience p , ul , li{
@@ -108,8 +106,8 @@ header img {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    width: 50%;
-    margin-right: 5%;
+    flex: 1;
+    padding-left: 5%;
     height: 100%;
 }
 
@@ -198,8 +196,8 @@ body.darkmode header {
     #edu-comp-div,
     #experience {
         width: 100%;
-        margin-right: 0;
         padding-right: 0;
+        padding-left: 0;
     }
 
     /* replace the vertical divider with a horizontal one */
