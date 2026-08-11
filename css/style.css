@@ -218,23 +218,20 @@ body.darkmode header {
 /* ---print layout --- */
 @media print {
     @page {
-        margin: 1.2cm 1.5cm;
-        size: A4 portrait;
-    }
-
-    * {
-        color: #111 !important;
-        border-color: #111 !important;
+        margin: 1.5cm;
     }
 
     body, body.darkmode {
         background-color: white !important;
-        color: #111 !important;
+        color: black !important;
         padding: 0 !important;
         margin: 0 !important;
         max-width: none !important;
-        font-size: 13.5px;
-        line-height: 1.45;
+    }
+    
+    body.darkmode h1, body.darkmode h2, body.darkmode h3, body.darkmode h4, body.darkmode p, body.darkmode li {
+        color: black !important;
+        border-color: black !important;
     }
 
     #lightswitchimg {
@@ -242,83 +239,49 @@ body.darkmode header {
     }
 
     header {
-        border-bottom: 2px solid #111 !important;
+        border-bottom: 2px solid black !important;
         margin-bottom: 20px !important;
         padding-top: 0 !important;
         flex-direction: row !important;
     }
 
-    #titlediv h1 {
-        font-size: 34px !important;
-        border-bottom: 2px solid #111 !important;
-    }
-
-    #titlediv h4 {
-        font-size: 13px !important;
-        margin-top: 6px !important;
-    }
-
-    #contactdiv {
-        display: flex !important;
-        font-size: 13px !important;
-        gap: 6px !important;
-        margin-bottom: 0 !important;
-    }
-
-    #summary h2 {
-        font-size: 18px !important;
-        border-bottom: 2px solid #111 !important;
-        margin-bottom: 10px !important;
-    }
-
-    #summary p {
-        font-size: 13.5px !important;
-        margin-bottom: 20px !important;
-    }
-
     main {
-        display: flex !important;
-        flex-direction: row !important;
+        display: block !important;
+    }
+
+    #edu-comp-div, #experience {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none !important;
+        display: block !important;
     }
 
     #edu-comp-div {
-        flex: 1 !important;
-        padding-right: 25px !important;
-        padding-bottom: 0 !important;
-        margin-bottom: 0 !important;
-        border-right: 2px solid #111 !important;
-        border-bottom: none !important;
-    }
-
-    #experience {
-        flex: 1.4 !important;
-        padding-left: 25px !important;
-    }
-
-    h2 {
-        font-size: 18px !important;
-        border-bottom: 2px solid #111 !important;
-        margin-top: 0 !important;
-        margin-bottom: 12px !important;
-    }
-
-    h3 {
-        font-size: 15px !important;
-        margin-top: 10px !important;
-        margin-bottom: 6px !important;
-    }
-
-    ul {
-        margin-bottom: 18px !important;
-    }
-
-    li {
-        margin-bottom: 4px !important;
+        margin-bottom: 30px !important;
+        border-bottom: 2px solid black !important;
+        padding-bottom: 20px !important;
     }
 
     a {
         text-decoration: none;
-        color: #111 !important;
+        color: black;
+    }
+
+    body {
+        font-size: 14px !important;
+    }
+    
+    #titlediv h1 {
+        font-size: 36px !important;
+    }
+    
+    h2 {
+        font-size: 20px !important;
+    }
+    
+    h3 {
+        font-size: 16px !important;
     }
 }
 
