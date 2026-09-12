@@ -22,6 +22,14 @@ header {
     margin-bottom: 50px;
 }
 
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 5px dotted rgba(102, 102, 102, 0.3);
+}
+
 h1 , h2 , h3 , h4 , section , p, li, #contactdiv {
     color: #666666;
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -150,6 +158,10 @@ body.darkmode header {
     border-bottom-color: rgba(232, 230, 227, 0.3);
 }
 
+body.darkmode footer {
+    border-top-color: rgba(232, 230, 227, 0.3);
+}
+
 
 
                                         /* ===media queries=== */
@@ -243,6 +255,12 @@ body.darkmode header {
         margin-bottom: 20px !important;
         padding-top: 0 !important;
         flex-direction: row !important;
+    }
+
+    footer {
+        border-top: 2px solid black !important;
+        margin-top: 20px !important;
+        padding-top: 10px !important;
     }
 
     main {
